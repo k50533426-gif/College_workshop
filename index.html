@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event Registration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>College Event Registration</h1>
+
+<p class="description">
+Register for our college workshop and technical events.
+</p>
+
+<h2>Event Information</h2>
+
+<table class="event-info">
+<tr>
+<td>Date</td>
+<td>20 April 2026</td>
+</tr>
+
+<tr>
+<td>Time</td>
+<td>10:00 AM</td>
+</tr>
+
+<tr>
+<td>Venue</td>
+<td>College Auditorium</td>
+</tr>
+
+<tr>
+<td>Organizer</td>
+<td>Department of Computer Application</td>
+</tr>
+</table>
+
+
+<form id="registrationForm">
+
+<fieldset>
+<legend>Personal Information</legend>
+
+<label>Name</label>
+<input type="text" id="name" required>
+
+<label>Email</label>
+<input type="email" id="email" required>
+
+<label>Phone</label>
+<input type="tel" id="phone" required>
+
+<label>Date of Birth</label>
+<input type="date">
+
+<label>Gender</label>
+<input type="radio" name="gender">Male
+<input type="radio" name="gender">Female
+
+</fieldset>
+
+
+<fieldset>
+<legend>Event Selection</legend>
+
+<label>Select Event</label>
+<select id="event">
+<option>Workshop</option>
+<option>Seminar</option>
+<option>Hackathon</option>
+</select>
+
+<label>Mode</label>
+<input type="radio" name="mode" value="Online">Online
+<input type="radio" name="mode" value="Offline">Offline
+
+</fieldset>
+
+
+<fieldset>
+<legend>Additional Details</legend>
+
+<label>College / Company</label>
+<input type="text">
+
+<label>Upload ID</label>
+<input type="file">
+
+<label>Comments</label>
+<textarea></textarea>
+
+</fieldset>
+
+<input type="checkbox" required>
+I confirm that the above details are correct
+
+<br><br>
+
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+
+</form>
+
+
+<h2>Registered Participants</h2>
+
+<table id="participants">
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Phone</th>
+<th>Event</th>
+<th>Mode</th>
+</tr>
+
+<tr>
+<td>Sample</td>
+<td>sample@mail.com</td>
+<td>9876543210</td>
+<td>Workshop</td>
+<td>Online</td>
+</tr>
+
+</table>
+
+
+<footer>
+
+<p>Email : helpdesk@college.com</p>
+<p>Help Desk : 9876543210</p>
+<p>© 2026 Event Registration</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+  </html>
